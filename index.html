@@ -4,48 +4,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sachin Dinesh Yadav - Portfolio</title>
     <style>
+        :root {
+            --primary: #1e4dd8;
+            --light: #ffffff;
+            --bg: #f0f4ff;
+            --text: #222;
+        }
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
+            background: var(--bg);
+            color: var(--text);
         }
         header {
-            background: #1a1a1a;
-            color: white;
-            padding: 40px;
+            background: var(--primary);
+            color: var(--light);
+            padding: 50px 20px;
             text-align: center;
+        }
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 15px;
         }
         section {
             max-width: 900px;
             margin: auto;
-            padding: 30px 20px;
+            padding: 30px 25px;
             background: white;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
         }
         h2 {
-            border-left: 5px solid #1a1a1a;
-            padding-left: 10px;
+            border-left: 6px solid var(--primary);
+            padding-left: 12px;
+            font-size: 22px;
         }
         ul { line-height: 1.8; }
         footer {
             text-align: center;
             padding: 20px;
-            background: #1a1a1a;
-            color: white;
-            margin-top: 30px;
+            background: var(--primary);
+            color: var(--light);
+            margin-top: 40px;
         }
         .contact a {
-            color: #1a1a1a;
+            color: var(--primary);
             text-decoration: none;
             font-weight: bold;
+        }
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
+        <!-- Photo Placeholder -->
+        <img src="profile.jpg" alt="Profile Photo" />
         <h1>Sachin Dinesh Yadav</h1>
         <p>B.Sc IT - Second Year</p>
     </header><section>
@@ -59,19 +88,27 @@
     <h2>Skills</h2>
     <ul>
         <li>Communication Skills</li>
+        <li>Time Management</li>
         <li>Teamwork & Collaboration</li>
         <li>Problem Solving</li>
         <li>Quick Learner</li>
-        <li>Adaptability</li
+        <li>Adaptability</li>
+        <li>Critical Thinking</li>
+        <li>Positive Attitude</li>
+        <li>Attention to Detail</li>
         <li>Multitasking</li>
+        <li>Creativity</li>
         <li>MS Office (Word, Excel, PowerPoint)</li>
         <li>Google Workspace (Docs, Sheets, Slides)</li>
         <li>Basic Computer Knowledge</li>
         <li>Data Entry & Typing</li>
+        <li>Internet Research</li>
+        <li>Email Management</li>
         <li>Excel (VLOOKUP, Pivot Table, formulas)</li>
         <li>C Programming, C++, Java, Python</li>
         <li>HTML, CSS, JavaScript</li>
         <li>SQL / Database Basics</li>
+        <li>Networking Basics</li>
         <li>Software Installation & Troubleshooting</li>
     </ul>
 </section>
@@ -83,6 +120,14 @@
         <li><strong>Simple Calculator</strong> – Created using JavaScript</li>
         <li><strong>Portfolio Website</strong> – This website is part of my learning journey</li>
     </ul>
+</section>
+
+<section>
+    <h2>Online Profiles</h2>
+    <div class="social-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </div>
 </section>
 
 <section class="contact">
